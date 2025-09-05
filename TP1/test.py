@@ -19,4 +19,8 @@ def test_3():
 	assert f.puissance(0,1000) == 0
 
 def test_4():
-	assert f puissance(
+	with pytest.raises(Exception):
+		puissance(0,-1)
+	with pytest.raises(Exception):
+		puissance(2,-3)
+
