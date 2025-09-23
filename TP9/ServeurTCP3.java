@@ -16,7 +16,10 @@ public class ServeurTCP3
 		DataInputStream dIn = new DataInputStream( socket.getInputStream());
 		DataOutputStream dOut = new DataOutputStream( socket.getOutputStream());
 
-		System.out.println("Message: " + dIn.readUTF());
+		String msg = dIn.readUTF();
+		System.out.println("Message: " + msg );
+		String rev = new StringBuilder(msg).reverse().toString();
+		dOut.writeUTF(rev);
 		socket.close();
 		socketserver.close();
 		}

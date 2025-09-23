@@ -8,7 +8,7 @@ public class ClientTCP3
 	{
 		try {
 		Socket socket = new Socket("localhost", 2016);
-		DataOutputStream dIn = new DataInputStream(socket.getInputStream());
+		DataInputStream dIn = new DataInputStream(socket.getInputStream());
 		DataOutputStream dOut = new DataOutputStream(socket.getOutputStream());
 		dOut.writeUTF(args[0]);
 		String rep = dIn.readUTF();
