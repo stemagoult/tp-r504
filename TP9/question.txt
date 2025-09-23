@@ -1,0 +1,6 @@
+Q2.1
+il ne se passe rien
+
+Q2.2
+c'est le port 1234. C'est un choix pertinent car les port entre 0 et 1023 sont réservé.
+

@@ -1,9 +1,23 @@
-import java . io . * ;
-import java . net . * ;
-InetAddress addr = InetAddress.getLocalHost();
-System.out.println( "adress=" +addr.getHostName() );
+import java.io.*;
+import java.net.*;
 
-DatagramPacket packet = new DatagramPacket ( data, data.lenght, addr, 1234 );
-Datagram Socke sock = new DatagramSocke();
-sock.send(packet);
-sock.close();
+public class ClientUDP 
+{
+    public static void main(String[] args) throws Exception 
+	{
+        DatagramSocket sock = new DatagramSocket();
+        byte[] data = "Hello World".getBytes();
+        InetAddress addr = InetAddress.getLocalHost();
+
+        System.out.println("Envoi: Hello World");
+        sock.send(new DatagramPacket(data, data.length, addr, 1234));
+
+        byte[] buf = new byte[1024];
+        DatagramPacket rep = new DatagramPacket(buf, buf.length);
+        sock.receive(rep);
+        String echo = new String(rep.getData(), 0, rep.getLength());
+        System.out.println("Réponse du serveur: " + echo);
+
+        sock.close();
+    }
+}
