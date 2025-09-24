@@ -4,3 +4,22 @@ il ne se passe rien
 Q2.2
 c'est le port 1234. C'est un choix pertinent car les port entre 0 et 1023 sont réservé.
 
+Q4.1
+oui, il est correct
+
+Q4.2
+le contenu n'est pas tout à le même de ce qui est montré dans le cours
+
+Q4.3
+non, il est constitué égaement header http
+
+Q4.4
+sa ne fonctionne pas correctement car le type d'http n'est pas compatible et le lien donné dans le TP nous redirige vers le lien www.infoworld.com
+
+Q4.5
+on obtient des résultats différents d'un navigateur à un autre car dans notre script on precise qu'on veut HTTP 1.1 mais certain site ne possède pas cette version
+
+Q4.6
+les champs renvoyé sont le HOST, les type MIME accepté, les langues accepté, l'encoding accepter et le user agent
+
+
