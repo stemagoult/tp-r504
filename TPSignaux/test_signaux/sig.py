@@ -7,12 +7,14 @@ import os
 def signal_stop(s, frame):
 	print ("réception du signal ", sig.Signals(s).name )
 	sys.exit()
-sig.signal(sig.SIGINT, signal_stop)
 
 def signal_handler(s, frame):
 	print ("réception du signal ", sig.Signals(s).name )
-sig.signal(sig.SIGQUIT, signal_handler)
 
+
+
+sig.signal(sig.SIGQUIT, signal_handler)
+sig.signal(sig.SIGINT, signal_stop)
 x=1
 while True:
 	print ("pid=", os.getpid(), x)
