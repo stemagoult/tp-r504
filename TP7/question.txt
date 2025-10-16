@@ -1,0 +1,13 @@
+#q1.2
+xdg-open output.svg
+l'intérêt du svg est que l'image prends moin de place et lorsqu'on zoom sur l'image on ne perd pas en qualité
+
+#q1.3
+xml
+
+#q1.5
+svg = 2857 oct
+png = 12496 oct
+
+#q1.7
+il y a des fleche qui sont rajouté
