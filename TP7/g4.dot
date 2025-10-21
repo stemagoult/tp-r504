@@ -1,5 +1,5 @@
 graph {
-node [shape="star" style="filled" fillcolor="aqua"];
+node [image="icon_router.png" shape="none" fixedsize=true ];
 edge [fontsize="20pt" color="red"];
 0 [shape="box"];
 H--G [label="14"];
@@ -16,4 +16,12 @@ D--C [label="1"];
 D--G [label="1"];
 D--E [label="1"];
 D--F [label="3"];
+A [pos="10,5!"];
+B [pos="7,8!"];
+C [pos="7,4!"];
+D [pos="4,4!"];
+E [pos="5,1!"];
+F [pos="2,2!"];
+G [pos="2,6!"];
+H [pos="4,8!"];
 }
